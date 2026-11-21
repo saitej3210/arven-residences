@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0b0a09">
+<title>ARVEN Residences — From Land to Landmark</title>
+<meta name="description" content="ARVEN Residences: premium four-storey residences, from foundation to finished interiors. Scroll the story and book a private visit.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="loader" id="loader"><div class="l-logo">ARVEN</div><div class="l-bar"><i id="l-fill"></i></div><div class="l-txt" id="l-txt">LOADING 0%</div></div>
+<header class="nav" id="nav">
+  <a class="logo" href="#top">ARVEN<span>RESIDENCES</span></a>
+  <nav><a href="#story">The Story</a><a href="#residences">Residences</a><a href="#contact" class="cta">Book a Visit</a></nav>
+</header>
+
+<main id="top">
+<section class="story" id="story">
+  <div class="stage">
+    <canvas id="film" role="img" aria-label="Cinematic scroll film: construction of the residence, then its interiors"></canvas>
+    <div class="vignette"></div><div class="bar top"></div><div class="bar bot"></div>
+
+    <div class="chap first" data-s="0" data-e="0.10"><p class="kick">ARVEN RESIDENCES · HYDERABAD</p><h1>From empty land<br>to <em>landmark.</em></h1><p class="sub">Scroll to watch a home being born.</p></div>
+    <div class="chap" data-s="0.12" data-e="0.30"><p class="kick">01 — THE LAND</p><h2>Every landmark begins<br>as an <em>empty plot.</em></h2><p class="sub">Chosen with care. Surveyed, levelled and prepared for the next fifty years.</p></div>
+    <div class="chap right" data-s="0.32" data-e="0.48"><p class="kick">02 — THE STRUCTURE</p><h2>Four floors rise,<br><em>built to last.</em></h2><p class="sub">Engineered frames, quality masonry and a site that never stops moving.</p></div>
+    <div class="chap" data-s="0.51" data-e="0.63"><p class="kick">03 — THE RESIDENCE</p><h2>Complete. Lit at <em>dusk.</em></h2><p class="sub">Warm glass, clean lines and balconies made for evenings.</p></div>
+    <div class="chap right" data-s="0.70" data-e="0.84"><p class="kick">04 — STEP INSIDE</p><h2>Light, marble<br>and <em>space.</em></h2><p class="sub">Double-height living, a designer kitchen and rooms that breathe.</p></div>
+    <div class="chap last" data-s="0.88" data-e="1"><p class="kick">05 — LIVE ABOVE THE CITY</p><h2>Your terrace.<br>Your <em>skyline.</em></h2><p class="sub">Private viewings are open by appointment.</p><a class="btn" href="#contact">Book a private visit ↗</a></div>
+
+    <div class="rail" id="rail" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><b id="rail-fill"></b></div>
+    <div class="cue" id="cue">SCROLL<i></i></div>
+  </div>
+</section>
+
+<section class="sec" id="residences">
+  <p class="eyebrow">THE RESIDENCES</p>
+  <h2 class="big">Designed for how<br>you actually <em>live.</em></h2>
+  <div class="stats">
+    <div><strong>4</strong><span>Floors</span></div>
+    <div><strong>3</strong><span>Terraces &amp; balconies</span></div>
+    <div><strong>24/7</strong><span>Gated security</span></div>
+    <div><strong>100%</strong><span>Private entry</span></div>
+  </div>
+  <div class="cards">
+    <article><b>01</b><h3>Architecture</h3><p>Clean horizontal lines, warm stone and floor-to-ceiling glass give every residence a quiet, confident presence.</p></article>
+    <article><b>02</b><h3>Interiors</h3><p>Marble feature walls, sculpted lighting and open-plan living that flows to the terrace.</p></article>
+    <article><b>03</b><h3>Outdoors</h3><p>Landscaped gardens, a private gate and rooftop lounges with open city views.</p></article>
+  </div>
+</section>
+
+<section class="sec contact" id="contact">
+  <p class="eyebrow">PRIVATE VISIT</p>
+  <h2 class="big">Come and <em>walk through</em> it.</h2>
+  <form id="enq" novalidate>
+    <label>Name<input name="name" required autocomplete="name"></label>
+    <label>Phone<input name="phone" required inputmode="tel" autocomplete="tel"></label>
+    <label>I am interested in<select name="interest"><option>A private site visit</option><option>Residence details</option><option>Pricing &amp; payment plans</option></select></label>
+    <label class="full">Message<textarea name="msg" rows="3"></textarea></label>
+    <p class="status" id="status" role="status"></p>
+    <button class="btn" type="submit">Send on WhatsApp ↗</button>
+  </form>
+</section>
+</main>
+<footer class="foot"><span>© 2026 ARVEN Residences</span><span>Concept website · Designed &amp; built by <a href="https://saitej3210.github.io/novaryx-studio/" target="_blank" rel="noopener">NOVARYX Studio</a></span></footer>
+<script src="script.js"></script>
+</body>
+</html>
